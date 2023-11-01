@@ -28,7 +28,7 @@ Event ID 4719 - System audit policy was changed.
 Event ID 4760 - A SID-History was added to an account. Some advanced malware can use this to move laterally  
 
 
-Signs of Actual User
+<b>Signs of Actual User</b>
 
 Event ID 4663 - Attempt was made to access an object. Normal File or directory access
 
