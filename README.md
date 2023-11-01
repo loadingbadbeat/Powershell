@@ -41,7 +41,7 @@ Event ID 4789 - The password hash of the account was accessed. This can occur wh
 
 
 
-Event ID	What it means</br>
+<b>Event ID	What it means</b></br>
 4624	Successful account log on</br>
 4625	Failed account log on</br>
 4634	An account logged off</br>
