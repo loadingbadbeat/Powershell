@@ -12,4 +12,4 @@ Event ID 4688 - A new process was created. When a pentester successfully gain ac
 
 Event ID 4648 - A logon was attempted using explicit credentials. 
 
-Event ID 1102 - The audit log was cleared.![image](https://github.com/loadingbadbeat/Powershell/assets/45952458/8b5ce094-6428-406f-9c84-18c638bb7bd8)
+Event ID 1102 - The audit log was cleared.
