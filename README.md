@@ -69,7 +69,11 @@ Event ID 4789 - The password hash of the account was accessed. This can occur wh
 4616	System time was changed</br>
 4657	A registry value was changed</br>
 4697	An attempt was made to install a service</br>
-4698, 4699, 4700, 4701, 4702	Events related to Windows scheduled tasks being created, modified, deleted, enabled or disabled</br>
+4698 Events related to Windows scheduled tasks being created, modified, deleted, enabled or disabled</br>
+4699 Events related to Windows scheduled tasks being created, modified, deleted, enabled or disabled</br>
+4700 Events related to Windows scheduled tasks being created, modified, deleted, enabled or disabled</br>
+4701 Events related to Windows scheduled tasks being created, modified, deleted, enabled or disabled</br>
+4702	Events related to Windows scheduled tasks being created, modified, deleted, enabled or disabled</br>
 4946	A rule was added to the Windows Firewall exception list</br>
 4947	A rule was modified in the Windows Firewall exception list</br>
 4950	A setting was changed in Windows Firewall</br>
