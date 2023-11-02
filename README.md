@@ -80,7 +80,8 @@ Event ID 4789 - The password hash of the account was accessed. This can occur wh
 4954	Group Policy settings for Windows Firewall has changed</br>
 5025	The Windows Firewall service has been stopped</br>
 5031	Windows Firewall blocked an application from accepting incoming traffic</br>
-5152, 5153	A network packet was blocked by Windows Filtering Platform</br>
+5152  A network packet was blocked by Windows Filtering Platform</br>
+5153	A network packet was blocked by Windows Filtering Platform</br>
 5155	Windows Filtering Platform blocked an application or service from listening on a port</br>
 5157	Windows Filtering Platform blocked a connection</br>
 5447	A Windows Filtering Platform filter was changed</br>
