@@ -85,3 +85,6 @@ Event ID 4789 - The password hash of the account was accessed. This can occur wh
 5155	Windows Filtering Platform blocked an application or service from listening on a port</br>
 5157	Windows Filtering Platform blocked a connection</br>
 5447	A Windows Filtering Platform filter was changed</br>
+
+<br>
+<b>PDF Print </b>
