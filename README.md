@@ -89,20 +89,20 @@ Event ID 4789 - The password hash of the account was accessed. This can occur wh
 <br>
 <h1>PDF Print </h1> <br>
 
-# Define the folder path to monitor
+Define the folder path to monitor
 $folderPath = "C:\print"
 
-# Define the printer name
+Define the printer name
 $printerName = "ZDesigner GX420d"
 
-# Create a FileSystemWatcher to monitor the folder for new PDF files
+Create a FileSystemWatcher to monitor the folder for new PDF files
 $watcher = New-Object System.IO.FileSystemWatcher
 $watcher.Path = $folderPath
 $watcher.Filter = "*.pdf"
 $watcher.IncludeSubdirectories = $false
 $watcher.EnableRaisingEvents = $true
 
-# Define the function to handle file creation events
+Define the function to handle file creation events
 function Start-AdobeReaderPrint($file) {
     # Specify the path to Adobe Reader executable
     $adobeReaderPath = "C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe"
@@ -120,17 +120,17 @@ function Start-AdobeReaderPrint($file) {
     Remove-Item -Path $file -Force
 }
 
-# Register the event handler for file creation
+Register the event handler for file creation
 Register-ObjectEvent -InputObject $watcher -EventName Created -SourceIdentifier FileCreated -Action {
     $file = $Event.SourceEventArgs.FullPath
     Write-Host "New PDF file detected: $file"
     Start-AdobeReaderPrint -file $file
 }
 
-# Display a message to indicate that the script is running
+Display a message to indicate that the script is running
 Write-Host "Monitoring folder $folderPath for PDF files. Press Ctrl+C to stop."
 
-# Keep the script running
+Keep the script running
 try {
     while ($true) {
         Wait-Event -Timeout 1
