@@ -89,23 +89,23 @@ Event ID 4789 - The password hash of the account was accessed. This can occur wh
 <br>
 <h1>PDF Print </h1> <br>
 
-Define the folder path to monitor
-$folderPath = "C:\print"
+Define the folder path to monitor <br>
+$folderPath = "C:\print"<br>
 
-Define the printer name
-$printerName = "ZDesigner GX420d"
+Define the printer name<br>
+$printerName = "ZDesigner GX420d"<br>
 
-Create a FileSystemWatcher to monitor the folder for new PDF files
-$watcher = New-Object System.IO.FileSystemWatcher
-$watcher.Path = $folderPath
-$watcher.Filter = "*.pdf"
-$watcher.IncludeSubdirectories = $false
-$watcher.EnableRaisingEvents = $true
+Create a FileSystemWatcher to monitor the folder for new PDF files<br>
+$watcher = New-Object System.IO.FileSystemWatcher<br>
+$watcher.Path = $folderPath<br>
+$watcher.Filter = "*.pdf"<br>
+$watcher.IncludeSubdirectories = $false<br>
+$watcher.EnableRaisingEvents = $true<br>
 
-Define the function to handle file creation events
-function Start-AdobeReaderPrint($file) {
-    # Specify the path to Adobe Reader executable
-    $adobeReaderPath = "C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe"
+Define the function to handle file creation events<br>
+function Start-AdobeReaderPrint($file) {<br>
+    # Specify the path to Adobe Reader executable<br>
+    $adobeReaderPath = "C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe"<br>
 
     # Use Adobe Reader to print the PDF file to the selected printer
     $printProcess = Start-Process -FilePath $adobeReaderPath -ArgumentList "/t `"$file`" `"$printerName`"" -PassThru
